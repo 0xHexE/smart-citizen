@@ -1,0 +1,90 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import {CdkTableModule} from '@angular/cdk/table';
+
+import {
+  MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatPaginatorModule,
+  MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule,
+  MatDialogModule, MatGridListModule, MatIconModule, MatInputModule,
+  MatListModule, MatMenuModule, MatProgressBarModule, MatProgressSpinnerModule,
+  MatRadioModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSortModule,
+  MatSlideToggleModule, MatSnackBarModule, MatTableModule, MatTabsModule, MatToolbarModule,
+  MatTooltipModule, MatFormFieldModule, MatExpansionModule, MatStepperModule
+} from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+@NgModule({
+  imports: [
+    CommonModule,
+    CdkTableModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatSliderModule,
+    MatSidenavModule,
+    MatSnackBarModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
+  exports: [
+    CdkTableModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    MatSliderModule,
+    MatSidenavModule,
+    MatSnackBarModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
+  declarations: []
+})
+export class OkCommonComponentModule { }

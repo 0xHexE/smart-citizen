@@ -1,0 +1,59 @@
+<div style="margin: 24px">
+  <mat-card *ngIf="userType === 'corporator'">
+    <mat-card-title>
+      Complaints
+    </mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let message of (cmessages|async)" (click)="sendReplay(message.$key)">
+          <mat-icon matListIcon>folder</mat-icon>
+          <h3 matLine> {{message.name}} </h3>
+          <p matLine>
+            <span> {{message.description}} </span>
+          </p>
+          <p matLine>
+            <span> {{message.replay}} </span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+  <div *ngIf="!(cmessages|async)">
+    Loading
+  </div>
+  <mat-card *ngIf="userType === 'citizen'" >
+    <mat-card-title>
+      Announcements
+    </mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let message of (cmessages|async)">
+          <mat-icon matListIcon>folder</mat-icon>
+          <h3 matLine> {{message.name}} </h3>
+          <p matLine>
+            <span> {{message.description}} </span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+  <mat-card *ngIf="userType === 'citizen'" >
+    <mat-card-title>
+      My Complaints
+    </mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let message of (filterArray(jmessages|async))">
+          <mat-icon matListIcon>folder</mat-icon>
+          <h3 matLine> {{message.name}} </h3>
+          <p matLine>
+            <span> {{message.description}} </span>
+          </p>
+          <p matLine>
+            <span> {{message.replay}} </span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>

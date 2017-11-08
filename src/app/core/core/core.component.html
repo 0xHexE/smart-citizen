@@ -1,0 +1,22 @@
+<mat-sidenav-container style="min-height: 100vh">
+  <mat-sidenav style="min-width: 320px" #sidebar>
+    <mat-nav-list>
+      <a mat-list-item (click)="view(link.action)" *ngFor="let link of apps"> {{link.name}} </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar color="primary" class="mat-elevation-z3" style="z-index: 9999">
+    <button mat-icon-button (click)="sidebar.toggle()">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+    <span>
+      Smart Citizen
+    </span>
+    <span style="flex-grow: 1"></span>
+    <button mat-button (click)="logout()">
+      Logout
+    </button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
