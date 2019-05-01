@@ -1,4 +1,7 @@
 # Prerequisite
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/httpsOmkar/smart-citizen.svg)](https://greenkeeper.io/)
+
 * node-js
 * angular-cli
 
